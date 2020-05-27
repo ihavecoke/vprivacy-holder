@@ -1,0 +1,23 @@
+{
+  "id": "1841887",
+  "name": "ihavecoke",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "6664158",
+      "name": "eye",
+      "font_class": "eye-close",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "6901018",
+      "name": "eye",
+      "font_class": "eye-open",
+      "unicode": "e625",
+      "unicode_decimal": 58917
+    }
+  ]
+}
