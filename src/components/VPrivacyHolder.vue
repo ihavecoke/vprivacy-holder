@@ -2,7 +2,13 @@
   <div class="vprivacy-holder">
     <span v-if="hiddenRawValue" class="raw-value">{{ rawValue }}</span>
     <span v-else class="privacy-value">{{ privacyValue }}</span>
-    <icon :name="iconName" class="toggle-icon" @click.native="togglePrivacy" />
+    <slot name="privacyToggler">
+      <icon
+        :name="iconName"
+        class="toggle-icon"
+        @click.native="togglePrivacy"
+      />
+    </slot>
   </div>
 </template>
 
