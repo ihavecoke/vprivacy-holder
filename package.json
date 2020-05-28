@@ -2,10 +2,22 @@
   "name": "vprivacy-holder",
   "version": "0.0.1",
   "private": true,
+  "description": "Vue.js vprivacy-holder component",
+  "author": {
+    "name": "ihavecoke",
+    "email": "ihavecoke@163.com"
+  },
+  "repository": "https://github.com/ihavecoke/vprivacy-holder",
+  "bugs": "https://github.com/ihavecoke/vprivacy-holder/issues",
+  "keywords": [
+    "Privacy",
+    "Vuejs",
+    "vprivacy-holder"
+  ],
+  "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "build": "vue-cli-service build"
   },
   "dependencies": {
     "core-js": "^3.6.4",
