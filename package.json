@@ -17,8 +17,12 @@
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "build:npm": "vue-cli-service build --target lib --name VPrivacyHolder src/components/VPrivacyHolder.vue"
   },
+  "main": "dist/VPrivacyHolder.umd.js",
+  "unpkg": "dist/VPrivacyHolder.umd.min.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "privacy-holder": "^0.0.7",
