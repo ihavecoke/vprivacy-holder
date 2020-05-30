@@ -1,6 +1,6 @@
 <template>
   <div class="vprivacy-holder">
-    <span v-if="hiddenRawValue" class="raw-value">{{ rawValue }}</span>
+    <span v-if="showRawValue" class="raw-value">{{ rawValue }}</span>
     <span v-else class="privacy-value">{{ privacyValue }}</span>
     <slot name="privacyToggler">
       <icon
@@ -20,10 +20,16 @@ export default {
   name: "VPrivacyHolder",
   components: { Icon },
   props: {
+    // default hide raw value shown privacy value
+    privacy: {
+      type: Boolean,
+      default: false
+    },
     rawValue: {
       type: [String, Number],
       require: true
     },
+    // predefined strategy like: phone, email, idCard...
     privacyStrategy: {
       type: String,
       default: "all"
@@ -35,11 +41,14 @@ export default {
     };
   },
   computed: {
+    showRawValue() {
+      return this.hiddenRawValue || !this.privacy;
+    },
     privacyValue() {
       return Privacy[this.privacyStrategy](this.rawValue);
     },
     iconName() {
-      return this.hiddenRawValue ? "eye-open" : "eye-close";
+      return this.showRawValue ? "eye-open" : "eye-close";
     }
   },
   methods: {
