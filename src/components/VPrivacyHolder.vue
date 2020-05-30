@@ -23,7 +23,7 @@ export default {
     // default hide raw value shown privacy value
     privacy: {
       type: Boolean,
-      default: false
+      default: true
     },
     rawValue: {
       type: [String, Number],
@@ -37,25 +37,25 @@ export default {
   },
   data() {
     return {
-      hiddenRawValue: false
+      showRawValue: false
     };
   },
+  mounted() {
+    this.showRawValue = !this.privacy;
+  },
   computed: {
-    showRawValue() {
-      return this.hiddenRawValue || !this.privacy;
-    },
     privacyValue() {
       return Privacy[this.privacyStrategy](this.rawValue);
     },
     iconName() {
-      return this.showRawValue ? "eye-open" : "eye-close";
+      return this.showRawValue ? "eye-close" : "eye-open";
     }
   },
   methods: {
     togglePrivacy() {
-      this.hiddenRawValue = !this.hiddenRawValue;
+      this.showRawValue = !this.showRawValue;
       this.$emit(ToggleEvent, {
-        privacy: this.hiddenRawValue,
+        privacy: this.showRawValue,
         meta: this.rawValue
       });
     }

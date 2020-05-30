@@ -7,7 +7,7 @@
       </div>
       <div class="case">
         <h2>Phone Number Default privacy</h2>
-        <VPrivacyHolder raw-value="13800000000" privacy-strategy="mobile" :privacy="true" />
+        <VPrivacyHolder raw-value="13800000000" privacy-strategy="mobile" :privacy="false" />
       </div>
       <div class="case">
         <h2>Name</h2>
