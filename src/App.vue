@@ -50,7 +50,9 @@
           v-model="customPrivacy"
         >
           <template #privacyToggler>
-            <a href="#" @click.prevent="togglePrivacy">Shown</a>
+            <a href="#" @click.prevent="togglePrivacy">{{
+              customPrivacyText
+            }}</a>
           </template>
         </VPrivacyHolder>
       </div>
@@ -70,6 +72,11 @@ export default {
     return {
       customPrivacy: false
     };
+  },
+  computed: {
+    customPrivacyText() {
+      return this.customPrivacy ? "Show" : "Hide";
+    }
   },
   methods: {
     togglePrivacy() {
