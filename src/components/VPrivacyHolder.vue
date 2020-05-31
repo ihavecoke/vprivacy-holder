@@ -2,13 +2,15 @@
   <div class="vprivacy-holder">
     <span v-if="showRawValue" class="raw-value">{{ rawValue }}</span>
     <span v-else class="privacy-value">{{ privacyValue }}</span>
-    <slot v-if="showTrigger" name="privacyToggler">
-      <icon
-        :name="iconName"
-        class="toggle-icon"
-        @click.native="togglePrivacy"
-      />
-    </slot>
+    <div
+      class="toggle-icon"
+      v-if="showTrigger"
+      @click="togglePrivacy"
+    >
+      <slot name="privacyToggler">
+        <icon :name="iconName" />
+      </slot>
+    </div>
   </div>
 </template>
 
@@ -33,6 +35,11 @@ export default {
     privacyStrategy: {
       type: String,
       default: "all"
+    },
+    // privacy rules
+    privacyRules: {
+      type: String,
+      default: "88"
     },
     showTrigger: {
       type: Boolean,

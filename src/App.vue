@@ -43,6 +43,14 @@
         <h2>All Privacy</h2>
         <VPrivacyHolder raw-value="allStringsWillPrivacy" />
       </div>
+      <div class="case">
+        <h2>Custom Trigger</h2>
+        <VPrivacyHolder raw-value="allStringsWillPrivacy">
+          <template #privacyToggler>
+            <a href="#" @click.stop.prevent>Shown</a>
+          </template>
+        </VPrivacyHolder>
+      </div>
     </div>
   </div>
 </template>
