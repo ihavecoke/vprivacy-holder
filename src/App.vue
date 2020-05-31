@@ -45,9 +45,12 @@
       </div>
       <div class="case">
         <h2>Custom Trigger</h2>
-        <VPrivacyHolder raw-value="allStringsWillPrivacy">
+        <VPrivacyHolder
+          raw-value="allStringsWillPrivacy"
+          v-model="customPrivacy"
+        >
           <template #privacyToggler>
-            <a href="#" @click.stop.prevent>Shown</a>
+            <a href="#" @click.prevent="togglePrivacy">Shown</a>
           </template>
         </VPrivacyHolder>
       </div>
@@ -62,6 +65,16 @@ export default {
   name: "App",
   components: {
     VPrivacyHolder
+  },
+  data() {
+    return {
+      customPrivacy: false
+    };
+  },
+  methods: {
+    togglePrivacy() {
+      this.customPrivacy = !this.customPrivacy;
+    }
   }
 };
 </script>

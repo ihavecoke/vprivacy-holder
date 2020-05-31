@@ -2,11 +2,7 @@
   <div class="vprivacy-holder">
     <span v-if="showRawValue" class="raw-value">{{ rawValue }}</span>
     <span v-else class="privacy-value">{{ privacyValue }}</span>
-    <div
-      class="toggle-icon"
-      v-if="showTrigger"
-      @click="togglePrivacy"
-    >
+    <div class="toggle-icon" v-if="showTrigger" @click="togglePrivacy">
       <slot name="privacyToggler">
         <icon :name="iconName" />
       </slot>
@@ -21,6 +17,9 @@ export const ToggleEvent = "toggle";
 export default {
   name: "VPrivacyHolder",
   components: { Icon },
+  model: {
+    prop: "privacy"
+  },
   props: {
     // default hide raw value shown privacy value
     privacy: {
