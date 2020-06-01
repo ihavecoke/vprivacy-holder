@@ -12,7 +12,7 @@
 
 <script>
 import Icon from "./icon/index.vue";
-const Privacy = require("privacy-holder");
+import Privacy from "privacy-holder";
 export const ToggleEvent = "toggle";
 export default {
   name: "VPrivacyHolder",
