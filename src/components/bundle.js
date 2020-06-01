@@ -5,7 +5,7 @@ import component from "./VPrivacyHolder.vue";
 export function install(Vue) {
   if (install.installed) return;
   install.installed = true;
-  Vue.component("VPrivacyHolder", component);
+  Vue.component("v-privacy-holder", component);
 }
 
 // Create module definition for Vue.use()

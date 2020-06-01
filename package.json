@@ -27,7 +27,7 @@
   },
   "main": "dist/VPrivacyHolder.umd.js",
   "module": "dist/VPrivacyHolder.esm.js",
-  "unpkg": "dist/VPrivacyHolder.umd.min.js",
+  "unpkg": "dist/VPrivacyHolder.umd.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "privacy-holder": "^0.0.7",
