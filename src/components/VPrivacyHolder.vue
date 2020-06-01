@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import Icon from "./icon";
+import Icon from "./icon/index.vue";
 const Privacy = require("privacy-holder");
 export const ToggleEvent = "toggle";
 export default {
