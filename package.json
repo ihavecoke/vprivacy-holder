@@ -1,7 +1,7 @@
 {
   "name": "vprivacy-holder",
   "version": "0.0.1",
-  "private": true,
+  "private": false,
   "description": "Vue.js vprivacy-holder component",
   "author": {
     "name": "ihavecoke",
@@ -17,10 +17,9 @@
   "license": "MIT",
   "scripts": {
     "serve": "vue-cli-service serve",
-    "lint": "vue-cli-service lint",
-    "build:npm": "vue-cli-service build --target lib --name VPrivacyHolder src/components/VPrivacyHolder.vue"
+    "lint": "vue-cli-service lint"
   },
-  "main": "dist/VPrivacyHolder.umd.js",
+  "main": "src/components/VPrivacyHolder.vue",
   "dependencies": {
     "core-js": "^3.6.4",
     "privacy-holder": "^0.0.7",
