@@ -13,5 +13,20 @@ yarn add vprivacy-holder
 Import to your project
 
 ```javascript
-import VPrivacyHolder from "./VPrivacyHolder";
+// page.vue
+<template>
+  <VPrivacyHolder raw-value='ihavecoke'/>
+</template>
+
+<script>
+    import VPrivacyHolder from "./VPrivacyHolder";
+    export default{
+      components:{VPrivacyHolder}
+    }
+</script>
 ```
+
+## Component options
+
+* **raw-value** the raw value should toggle privacy 
+* **privacy-strategy** privacy strategy eg: `email`,`phone`,`name`,`all` etc. 
