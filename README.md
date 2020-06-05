@@ -1,8 +1,8 @@
 # Privacy Holder Vue.js component
 
-Vue component for [privacy-holder.js](https://github.com/ihavecoke/privacy-holder) 
+Integration [privacy-holder.js](https://github.com/ihavecoke/privacy-holder) to `Vue.js`
 
-## Install
+## Usage
 
 Install via yarn 
 
@@ -17,7 +17,6 @@ Import to your project
 <template>
   <VPrivacyHolder raw-value='ihavecoke'/>
 </template>
-
 <script>
     import VPrivacyHolder from "./VPrivacyHolder";
     export default{
@@ -26,7 +25,9 @@ Import to your project
 </script>
 ```
 
-## Component options
+## Options
 
-* **raw-value** the raw value should toggle privacy 
-* **privacy-strategy** privacy strategy eg: `email`,`phone`,`name`,`all` etc. 
+| Name             | Example                     | Comments                                                     |
+| ---------------- | --------------------------- | ------------------------------------------------------------ |
+| raw-value        | 13800000000                 | The raw value you  toggle privacy will be 138****0000        |
+| privacy-strategy | all,phone,email,idCard,name | This option set component how to privacy value (emial=>'ih*******@163.com') |
