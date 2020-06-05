@@ -35,11 +35,6 @@ export default {
       type: String,
       default: "all"
     },
-    // privacy rules
-    privacyRules: {
-      type: String,
-      default: "88"
-    },
     showTrigger: {
       type: Boolean,
       default: true
