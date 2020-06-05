@@ -8311,6 +8311,13 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
+vprop-types@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.npm.taobao.org/vprop-types/download/vprop-types-0.0.1.tgz#b0ee2330bbea9ae8200f7720d9e9181d4c8731e6"
+  integrity sha1-sO4jMLvqmuggD3cg2ekYHUyHMeY=
+  dependencies:
+    lodash "^4.17.15"
+
 vue-eslint-parser@^7.0.0:
   version "7.1.0"
   resolved "https://registry.npm.taobao.org/vue-eslint-parser/download/vue-eslint-parser-7.1.0.tgz?cache=0&sync_timestamp=1589539313907&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fvue-eslint-parser%2Fdownload%2Fvue-eslint-parser-7.1.0.tgz#9cdbcc823e656b087507a1911732b867ac101e83"

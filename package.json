@@ -23,6 +23,7 @@
   "dependencies": {
     "core-js": "^3.6.4",
     "privacy-holder": "^0.0.7",
+    "vprop-types": "^0.0.1",
     "vue": "^2.6.11"
   },
   "devDependencies": {

@@ -13,6 +13,7 @@
 <script>
 import Icon from "./icon/index.vue";
 import Privacy from "privacy-holder";
+import PropTypes from "vprop-types";
 export const ToggleEvent = "toggle";
 export default {
   name: "VPrivacyHolder",
@@ -22,23 +23,11 @@ export default {
   },
   props: {
     // default hide raw value shown privacy value
-    privacy: {
-      type: Boolean,
-      default: true
-    },
-    rawValue: {
-      type: [String, Number],
-      require: true
-    },
+    privacy: PropTypes.bool.def(true),
+    rawValue: PropTypes.string.isRequired,
     // predefined strategy like: phone, email, idCard...
-    privacyStrategy: {
-      type: String,
-      default: "all"
-    },
-    showTrigger: {
-      type: Boolean,
-      default: true
-    }
+    privacyStrategy: PropTypes.string.def("all"),
+    showTrigger: PropTypes.bool.def(true)
   },
   data() {
     return {
