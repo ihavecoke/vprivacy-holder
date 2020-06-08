@@ -22,7 +22,7 @@
   "main": "src/components/VPrivacyHolder.vue",
   "dependencies": {
     "privacy-holder": "^0.0.7",
-    "vprop-types": "^0.0.1",
+    "vprop-types": "^0.0.2",
     "vue": "^2.6.11"
   },
   "devDependencies": {

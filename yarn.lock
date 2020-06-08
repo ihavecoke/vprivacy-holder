@@ -5052,6 +5052,11 @@ lodash.defaultsdeep@^4.6.1:
   resolved "https://registry.npm.taobao.org/lodash.defaultsdeep/download/lodash.defaultsdeep-4.6.1.tgz#512e9bd721d272d94e3d3a63653fa17516741ca6"
   integrity sha1-US6b1yHSctlOPTpjZT+hdRZ0HKY=
 
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.npm.taobao.org/lodash.isplainobject/download/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
+
 lodash.kebabcase@^4.1.1:
   version "4.1.1"
   resolved "https://registry.npm.taobao.org/lodash.kebabcase/download/lodash.kebabcase-4.1.1.tgz#8489b1cb0d29ff88195cceca448ff6d6cc295c36"
@@ -8311,12 +8316,12 @@ vm-browserify@^1.0.1:
   resolved "https://registry.npm.taobao.org/vm-browserify/download/vm-browserify-1.1.2.tgz#78641c488b8e6ca91a75f511e7a3b32a86e5dda0"
   integrity sha1-eGQcSIuObKkadfUR56OzKobl3aA=
 
-vprop-types@^0.0.1:
-  version "0.0.1"
-  resolved "https://registry.npm.taobao.org/vprop-types/download/vprop-types-0.0.1.tgz#b0ee2330bbea9ae8200f7720d9e9181d4c8731e6"
-  integrity sha1-sO4jMLvqmuggD3cg2ekYHUyHMeY=
+vprop-types@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.npm.taobao.org/vprop-types/download/vprop-types-0.0.2.tgz#ea5b7ca0cc17644e7109311e8ef566e51a3f5bd2"
+  integrity sha1-6lt8oMwXZE5xCTEejvVm5Ro/W9I=
   dependencies:
-    lodash "^4.17.15"
+    lodash.isplainobject "^4.0.6"
 
 vue-eslint-parser@^7.0.0:
   version "7.1.0"
